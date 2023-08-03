@@ -25,5 +25,5 @@ docker run -v ./php:/usr/src/app -w /usr/src/app php:latest php main.php
 Rust
 
 ```bash
-docker run -v ./rust:/usr/src/app -w /usr/src/app rust:latest rustc main.rs && ./main
+docker run -v ./rust:/usr/src/app -w /usr/src/app -it rust:latest sh -c "rustc main.rs && ./main"
 ```
