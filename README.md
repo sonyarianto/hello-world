@@ -4,6 +4,8 @@ Just a simple hello world program on different languages and just use Docker to 
 
 ## Languages
 
+- [C](c/README.md)
+- [C++](c++/README.md)
 - [Go](go/README.md)
 - [PHP](php/README.md)
 - [Rust](rust/README.md)
