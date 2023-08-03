@@ -18,7 +18,7 @@ Go to project directory folder and run below commands for each particular langua
 docker run -v ./go:/go/src/app -w /go/src/app golang:latest go run main.go
 ```
 
-### PHP
+### PHP (CLI)
 
 ```bash
 docker run -v ./php:/usr/src/app -w /usr/src/app php:latest php main.php
