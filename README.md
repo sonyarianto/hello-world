@@ -18,6 +18,12 @@ Go to project directory folder and run below commands for each particular langua
 docker run -v ./c:/usr/src/app -w /usr/src/app gcc:latest sh -c "gcc -o main main.c && ./main"
 ```
 
+### C++
+
+```bash
+docker run -v ./c++:/usr/src/app -w /usr/src/app buildpack-deps:latest sh -c "g++ -o main main.cpp && ./main"
+```
+
 ### Go
 
 ```bash
