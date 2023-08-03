@@ -10,19 +10,21 @@ Just a simple hello world program on different languages and just use Docker to 
 
 ## Quick Start
 
-Go
+Go to project directory folder and run below commands for each particular language.
+
+### Go
 
 ```bash
 docker run -v ./go:/go/src/app -w /go/src/app golang:latest go run main.go
 ```
 
-PHP
+### PHP
 
 ```bash
 docker run -v ./php:/usr/src/app -w /usr/src/app php:latest php main.php
 ```
 
-Rust
+### Rust
 
 ```bash
 docker run -v ./rust:/usr/src/app -w /usr/src/app -it rust:latest sh -c "rustc main.rs && ./main"
