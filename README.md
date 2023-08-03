@@ -6,6 +6,7 @@ Just a simple hello world program on different languages and just use Docker to 
 
 - [Go](go/README.md)
 - [PHP](php/README.md)
+- [Rust](rust/README.md)
 
 ## Quick Start
 
@@ -19,4 +20,10 @@ PHP
 
 ```bash
 docker run -v ./php:/usr/src/app -w /usr/src/app php:latest php main.php
+```
+
+Rust
+
+```bash
+docker run -v ./rust:/usr/src/app -w /usr/src/app rust:latest rustc main.rs && ./main
 ```
