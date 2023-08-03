@@ -12,6 +12,12 @@ Just a simple hello world program on different languages and just use Docker to 
 
 Go to project directory folder and run below commands for each particular language.
 
+### C
+
+```bash
+docker run -v ./c:/usr/src/app -w /usr/src/app gcc:latest sh -c "gcc -o main main.c && ./main"
+```
+
 ### Go
 
 ```bash
