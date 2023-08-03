@@ -27,3 +27,9 @@ Rust
 ```bash
 docker run -v ./rust:/usr/src/app -w /usr/src/app -it rust:latest sh -c "rustc main.rs && ./main"
 ```
+
+## License
+
+MIT
+
+Maintained by Sony Arianto Kurniawan <<sony@sony-ak.com>> and contributors.
