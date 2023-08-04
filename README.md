@@ -7,6 +7,7 @@ Just a simple hello world program on different languages and just use Docker to 
 - [C](c/README.md)
 - [C++](c++/README.md)
 - [Go](go/README.md)
+- [JavaScript](javascript/README.md)
 - [PHP](php/README.md)
 - [Rust](rust/README.md)
 
@@ -30,6 +31,12 @@ docker run -v ./c++:/usr/src/app -w /usr/src/app buildpack-deps:latest sh -c "g+
 
 ```bash
 docker run -v ./go:/go/src/app -w /go/src/app golang:latest go run main.go
+```
+
+### JavaScript
+
+```bash
+docker run -v ./javascript:/usr/src/app -w /usr/src/app node:latest node main.js
 ```
 
 ### PHP (CLI)
