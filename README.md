@@ -18,13 +18,13 @@ Go to project directory folder and run below commands for each particular langua
 ### C
 
 ```bash
-docker run -v ./c:/usr/src/app -w /usr/src/app gcc:latest sh -c "gcc -o main main.c && ./main"
+docker run -v ./c:/usr/src/app -w /usr/src/app -it --rm gcc:latest sh -c "gcc -o main main.c && ./main"
 ```
 
 ### C++
 
 ```bash
-docker run -v ./c++:/usr/src/app -w /usr/src/app buildpack-deps:latest sh -c "g++ -o main main.cpp && ./main"
+docker run -v ./c++:/usr/src/app -w /usr/src/app -it --rm buildpack-deps:latest sh -c "g++ -o main main.cpp && ./main"
 ```
 
 ### Go
@@ -48,7 +48,13 @@ docker run -v ./php:/usr/src/app -w /usr/src/app php:latest php main.php
 ### Rust
 
 ```bash
-docker run -v ./rust:/usr/src/app -w /usr/src/app -it rust:latest sh -c "rustc main.rs && ./main"
+docker run -v ./rust:/usr/src/app -w /usr/src/app -it --rm rust:latest sh -c "rustc main.rs && ./main"
+```
+
+### Zig
+    
+```bash
+docker run -v ./zig:/usr/src/app -w /usr/src/app -it --rm buddyspencer/ziglang:latest sh -c "zig build-exe main.zig && ./main"
 ```
 
 ## License
